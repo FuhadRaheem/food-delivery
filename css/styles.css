@@ -1,0 +1,672 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Comfortaa', cursive;
+    color:  #2F4F4F;
+    font-size: 16px;
+}
+
+/* HEADER START */
+header.header {
+    height: 100vh;
+    background: linear-gradient(to right bottom , #008b8b90, #2F4F4F) , url(../images/hero.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+div#logo {
+    height: 40px;
+    margin-left: 100px;
+    padding-top: 20px;
+}
+
+div#logo img {
+    height: 100px;
+    display: inline-block;
+}
+
+div#nav-bar {
+    font-size: 18px;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+div#nav-bar ul {
+    display: inline-flex;
+    float: right;
+}
+
+div#nav-bar ul li {
+    padding: 20px;
+    position: relative;
+    right: 100px;
+    list-style: none;
+    cursor: pointer;
+}
+
+div#nav-bar ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+div#nav-bar ul li:hover a::after {
+    display: block;
+    height: 2px;
+    background-color: #ff7300;
+    content: "";
+    width: 70px;
+    margin: 10px auto 0 auto;
+}
+
+div#nav-bar ul li:hover a::after:hover {
+    transition: 0.5s
+}
+
+div.header-text {
+    position: absolute;
+    top: 40vh;
+    font-size: 140%;
+    word-spacing: 4px;
+    letter-spacing: 1px;
+    color: #fff;
+    padding-left: 100px;
+    text-transform: uppercase;
+}
+
+#header-text-primary {
+    display: block;
+}
+
+#header-text-primary {
+    display: block;
+
+}
+
+div.header-buttons {
+    color: #fff;
+    text-transform: none;
+    margin-top: 30px;
+    font-size: 18px;
+}
+
+span#hungry {
+    background-color: #ff7300;
+    padding: 10px 25px 10px 25px;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+span#hungry:hover {
+    background-color: #ff5e00;
+    transition: 0.4s
+}
+
+span#more {
+    background-color: #ff7300 transparent;
+    border: solid 1px #ff7300;
+    color: #ff7300;
+    padding: 10px 25px 10px 25px;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+span#more:hover {
+    color: #fff;
+    background-color: #ff5e00;
+    transition: 0.4s
+}
+/* HEADER END */
+
+section.main {
+    height: 85vh;
+    background-color: #fff;
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+
+.headers {
+    text-transform: uppercase;
+    color:  #2F4F4F;
+    letter-spacing: 2px;
+    font-size: 32px;
+    text-align: center;
+    margin-top: 70px;
+}
+
+.headers::after {
+    display: block;
+    height: 2px;
+    background-color: #ff7300;
+    content: "";
+    width: 150px;
+    margin: 30px auto 50px auto;
+}
+
+.texts {
+    color:  #2F4F4F;
+    font-size: 20px;
+    text-align: justify;
+    line-height: 145%;
+    width: 70%;
+    margin-left: 15%;
+}
+
+.glyphicon {
+    font-size: 45px;
+    margin-top: 50px;
+    text-align: justify;
+    color: #ff7300;
+}
+
+h3 {
+    font-size: 150%;
+}
+
+/* GALLERY START */
+
+.img-fluid {
+    height: auto;
+    width: 100%;
+    transform: scale(1.10);
+}
+
+.img-fluid:hover {
+    animation-name: gallery-animation;
+    animation-duration: 1s;
+    backface-visibility: hidden;
+}
+
+@keyframes gallery-animation {
+    0% {
+            opacity: 0.95;
+            transform: scale(1.12);
+    }
+
+    100% {
+            opacity: 1;
+            transform: scale(1.10);
+    }
+}
+
+.gallery {
+    height: 60vh;
+    margin-top: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+
+.container-fluid {
+    height: 70vh;
+}
+
+/* GALLERY END */
+
+/* HOW IT WORKS START */
+section.how-it-works {
+    height: 100vh;
+    background-color: #ddd2d246;
+    padding-top: 60px;
+}
+
+img#phone {
+    height: 60vh;
+    position: relative;
+    left: 50%;
+    padding-bottom: 50px;
+}
+
+div.listing {
+    float: left;
+    font-size: 25px;
+    border: solid 1px #ff7300;
+    padding: 5px 10px 5px 10px;
+    font-weight: bold;
+    border-radius: 20px;
+}
+
+div.listing::after {
+    content: "";
+    clear: both;
+}
+
+.listing-text {
+    position: relative;
+    left: 20px;
+    line-height: 30px;
+}
+
+#listing-pos {
+    margin-top: 50px;
+}
+
+.stores {
+    margin-top: 35px;
+    padding-bottom: 50px;
+}
+
+#android {
+    width: 140px;
+    cursor: pointer;
+}
+
+#apple {
+    width: 160px;
+    cursor: pointer;
+}
+
+/* HOW IT WORKS END */
+
+
+.card {
+    border: transparent;
+}
+
+div.card-body ul li {
+    list-style: none;
+    line-height: 0 !important;
+    padding-top: 0 !important;
+    margin-top: 0 !important;
+}
+
+div.card-body ul li .g-icons {
+    font-size: 16px;
+   padding-right: 10px;
+}
+
+div.card-body ul li a {
+    text-decoration: underline;
+    color: #ff5e00;
+}
+
+div.card-body ul li a:hover {
+    color: #ff7300;
+}
+
+/*OUR RATINGS START */
+section.our-ratings {
+    background: linear-gradient(to right bottom,  #008b8b90, #2F4F4F) , url(../images/2.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+#ratings-text-color {
+    color: #fff;
+    font-family: 'Niconne', cursive;
+}
+
+#ratings-h2-color {
+    color: #fff;
+    padding-top: 50px;
+    font-family: 'Comfortaa', cursive;
+}
+
+blockquote {
+    background: transparent;
+    border: none;
+    font-size: 22px;
+}
+
+cite img {
+    height: 50px;
+    border-radius: 200px;
+    padding-right: 7px;
+}
+
+
+/*OUR RATINGS END */
+
+/*EATING HEALTHY START*/
+
+section.eating-healthy {
+    background-color: #ddd2d246;
+    padding-top: 10px;
+    padding-bottom: 50px;
+}
+
+blockquote.price-listing {
+    background-color: #fff;
+}
+
+blockquote.price-listing .price {
+    font-size: 16px;
+    color: #ff5e00;
+}
+
+blockquote span {
+    font-size: 50px;
+    padding-right: 10px;
+}
+
+p.head-price {
+    font-size: 16px;
+}
+
+.head-price {
+    font-size: 16px;
+}
+
+ul.head-price {
+    list-style: none;
+}
+
+ul.head-price li {
+
+}
+
+ul li i.glyphicon-ok {
+    font-size: 16px;
+    padding-right: 10px;
+}
+
+ul li i.glyphicon-remove {
+    font-size: 16px;
+    padding-right: 10px;
+}
+
+div.signup-btn {
+    width: 130px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    background-color: #ff7300;
+    border-radius: 50px;
+    font-size: 16px;
+    color: #fff;
+    margin: 0 auto;
+    cursor: pointer;
+}
+
+div.signup-btn:hover {
+    background-color: #ff5e00;
+    transition: 0.4s
+}
+
+div.signup-btn-light {
+    background-color: #ff7300 transparent;
+    border: solid 1px #ff7300;
+    color: #ff7300;
+    border-radius: 50px;
+    cursor: pointer;
+    font-size: 16px;
+    text-align: center;
+    line-height: 40px;
+    width: 130px;
+    height: 40px;
+    margin: 0 auto;
+}
+
+div.signup-btn-light:hover {
+    color: #fff;
+    background-color: #ff5e00;
+    transition: 0.4s
+}
+/*EATING HEALTHY END*/
+
+section.happy {
+    height: 90vh;
+}
+
+div.wrapper {
+    width: 700px;
+    margin: 0 auto;
+}
+
+div.contact-data {
+    display: block;
+    text-align: justify;
+    padding: 10px;
+}
+
+div.contact-data input {
+    width: 400px;
+    position: relative;
+    right: -10px;
+    float: right;
+    padding: 5px;
+}
+
+div.contact-data select {
+    width: 400px;
+    position: relative;
+    right: -10px;
+    float: right;
+    padding: 5px;
+}
+
+textarea {
+    resize: none;
+    width: 400px;
+    position: relative;
+    right: -10px;
+    float: right;
+    padding: 5px;
+}
+
+div.submit-btn {
+    width: 150px;
+    height: 40px;
+    line-height: 35px;
+    text-align: center;
+    background-color: #ff7300;
+    border-radius: 50px;
+    font-size: 16px;
+    color: #fff;
+    margin: 10px auto;
+    cursor: pointer;
+    position: relative;
+    right: -25px;
+    padding: 5px;
+}
+
+div.submit-btn:hover {
+    background-color: #ff5e00;
+    transition: 0.4s
+}
+
+section.footer {
+    height: 20vh;
+    background-color: #050513c4;
+    color: #fff;
+}
+
+section.footer div.footer-wrapper p {
+    padding-top: 50px;
+    text-align: center;
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+
+section.footer div.footer-wrapper p span {
+    border: solid 2px #fff;
+    border-radius: 50px;
+    padding: 10px 20px;
+    margin-left: 20px;
+    cursor: pointer;
+}
+
+section.footer div.footer-wrapper p span:hover {
+    background-color: rgba(255, 255, 255, 0.082);
+}
+
+section.footer div.footer-wrapper p span:active {
+    background-color: rgba(255, 255, 255, 0.472);
+}
+
+div.footer-bottom {
+    height: 50px;
+    background-color: #03031ade;
+    text-align: center;
+    line-height: 50px;
+    color: #fff;
+    transition: 0.4s;
+}
+  /*Best Query Practice*/
+
+   /*Extra small devices (portrait phones, less than 576px)*/
+@media (max-width: 575.98px) { ... }
+
+/*Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) and (max-width: 767.98px) { ... }
+
+/*Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) and (max-width: 991.98px) { ... }
+
+/*Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    div.card-body ul li .g-icons {
+        font-size: 14px;
+       padding-right: 7px;
+    }
+}
+
+/*Extra large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) {
+    section.main {
+        height: 105vh;
+        background-color: #fff;
+        padding-bottom: 0;
+        margin-bottom: 0;
+    }
+
+    section.happy {
+        margin-bottom: 100px;
+    }
+
+    section.how-it-works {
+        height: 110vh;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
